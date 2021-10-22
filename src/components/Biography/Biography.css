@@ -19,32 +19,48 @@
 
 .bio-about{
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: space-evenly;
 	height: 80%;
+	position: relative;
 }
 
 .bio-content-left{
 	width: 49vw;
 	text-align: left;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .bio-content-left p {
 	padding: 0 10px 0 25px;
 }
-/*.bio-content-left h3{
-	padding: 20px 15px 20px 15px;
-}*/
 
 .bio-content-right{
 	width: 49vw;
 }
 
 .bio-content-right-logos{
-	
+	height: 100%;
+	display: grid;
+	grid-template-columns: 33% 33% 34%;
+	/*grid-template-rows: repeat(4, 25%);*/
+	row-gap: 15%;
+	justify-items: center;
+	align-items: center;
 }
 
-/*.bio-content-right-logos img{
-	width: 100px;
-}*/
+/*Animations*/
+
+.bio-content-right-logos img{
+	/*cursor: not-allowed;*/
+	will-change: transform;
+	transition: transform 450ms;
+}
+
+.bio-content-right-logos img:hover{
+	transition: 125ms;
+	transform: translateY(-15px);
+
+}

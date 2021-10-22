@@ -14,3 +14,8 @@
 	font-size: 1.2rem;
 	cursor: pointer;
 }
+
+.nav-item a{
+	text-decoration: none;
+	color: black;
+}
