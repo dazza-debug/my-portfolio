@@ -1,0 +1,50 @@
+.bio-main{
+	height: 100vh;
+	font-size: xx-large;
+	font-weight: bolder;
+	position: relative;
+}
+
+.bio-title{
+	background: -webkit-linear-gradient(145deg, rgba(0,190,140,1) 0%, rgba(71,255,253,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: flex;
+	/*width: 100vw;*/
+	justify-content: center;
+	align-items: center;
+	/*padding: 15%;*/
+	height: 20%;
+}
+
+.bio-about{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 80%;
+}
+
+.bio-content-left{
+	width: 49vw;
+	text-align: left;
+	display: block;
+}
+
+.bio-content-left p {
+	padding: 0 10px 0 25px;
+}
+/*.bio-content-left h3{
+	padding: 20px 15px 20px 15px;
+}*/
+
+.bio-content-right{
+	width: 49vw;
+}
+
+.bio-content-right-logos{
+	
+}
+
+/*.bio-content-right-logos img{
+	width: 100px;
+}*/

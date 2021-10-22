@@ -1,0 +1,16 @@
+.nav-bar{
+	height: 15vh;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-item{
+	height: 100%;
+	float: left;
+	width: 30vw;
+	font-weight: bold;
+	font-size: 1.2rem;
+	cursor: pointer;
+}

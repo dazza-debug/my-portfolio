@@ -1,0 +1,18 @@
+
+.App-header {
+  height: 85vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /*background-color: rgba(90, 219, 185, .80);*/
+  background: rgb(90,219,185);
+  background: linear-gradient(45deg, rgba(90,219,185,1) 0%, rgba(123,237,236,1) 100%);
+  font-weight: bolder;
+  color: white;
+  font-size: xx-large;
+  position: relative;
+}
+
+.header-info{
+	padding: 200px;
+}

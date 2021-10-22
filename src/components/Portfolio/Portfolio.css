@@ -1,0 +1,5 @@
+.portf-main{
+	height: 100vh;
+	background: rgb(90,219,185);
+  	background: linear-gradient(45deg, rgba(90,219,185,1) 0%, rgba(123,237,236,1) 100%);
+}
