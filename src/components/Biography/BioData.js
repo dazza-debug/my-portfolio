@@ -1,3 +1,4 @@
+//All svgs found at https://www.svgrepo.com/
 const bioData = [
 	{
 		"name": "HTML logo",
@@ -43,7 +44,29 @@ const bioData = [
 		"name": "C# logo",
 		"url": process.env.PUBLIC_URL + '/Logos/c-sharp-svgrepo-com.svg'
 	},
-]
+	{
+		"name": "Git logo",
+		"url": process.env.PUBLIC_URL + '/Logos/git-icon-svgrepo-com.svg'
+	}
+];
+
+// const milestone = [
+// 	{
+// 		"milestone": `Completed "Complete C# Unity Developer 2D" (Udemy)`
+// 	},
+// 	{
+// 		"milestone": `Completed "Certificate III in information, digital media and technology" course (TAFE)`
+// 	},
+// 	{
+// 		"milestone": `Completed "The Complete Web Developer Zero to Mastery" course (Udemy)`
+// 	},
+// 	{
+// 		"milestone": `Began project "H M Movie Motors" (95% complete)`
+// 	},
+// 	{
+// 		"milestone": `Completed "The Complete Junior to Senior Web Developer Roadmap" course (Udemy)`
+// 	},
+// ]
 
 module.exports = {
 	bioData

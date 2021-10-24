@@ -1,0 +1,13 @@
+.footer-main{
+	height: 200px;
+	background: rgb(57,57,57);
+	background: linear-gradient(45deg, rgba(57,57,57,1) 0%, rgba(22,22,22,1) 100%);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.footer-main a{
+	color: lightgray;
+}

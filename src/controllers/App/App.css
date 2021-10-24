@@ -4,6 +4,10 @@
   border: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /*scrollbar stuff*/
 
 *::-webkit-scrollbar {
@@ -44,6 +48,13 @@ ul {
 .App-link {
   color: #61dafb;
 }
+
+
+.hide{
+  display: none;
+}
+
+
 
 /*@keyframes App-logo-spin {
   from {

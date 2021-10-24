@@ -27,7 +27,7 @@
 
 .bio-content-left{
 	width: 49vw;
-	text-align: left;
+	/*text-align: left;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -39,6 +39,7 @@
 
 .bio-content-right{
 	width: 49vw;
+	margin-bottom: 25px;
 }
 
 .bio-content-right-logos{
@@ -49,6 +50,26 @@
 	row-gap: 15%;
 	justify-items: center;
 	align-items: center;
+}
+
+.bio-content-left-top p{
+	/*text-align: center;*/
+	font-weight: 400;
+}
+
+.milestone{
+	text-align: left;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 12px;
+	background: rgb(90,219,185);
+  	background: linear-gradient(45deg, rgba(90,219,185,1) 0%, rgba(123,237,236,1) 100%);
+/*  	background: 
+  		linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+	    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+	    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 5px 5px;*/
+  	color: white;
 }
 
 /*Animations*/

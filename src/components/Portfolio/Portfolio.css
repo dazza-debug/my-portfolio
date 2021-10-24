@@ -2,4 +2,85 @@
 	height: 100vh;
 	background: rgb(90,219,185);
   	background: linear-gradient(45deg, rgba(90,219,185,1) 0%, rgba(123,237,236,1) 100%);
+/*  	background: rgb(80,196,166);
+	background: linear-gradient(45deg, rgba(80,196,166,1) 0%, rgba(111,213,212,1) 100%);*/
+  	font-size: xx-large;
+	font-weight: bolder;
+	position: relative;
+	color: white;
 }
+
+.portf-title{
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.portf-content{
+	height: 80%;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 750px));
+	justify-content: center;
+	justify-items: center;
+	/*margin: 150px;*/
+}
+
+.portf-item{
+	/*min-width: 200px;*/
+	width: 610px;
+	height: 450px;
+	background: white;
+	color: black;
+	border-radius: 20px;
+	/*border: 2px solid black;*/
+	position: relative;
+}
+
+.portf-item-img{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 5px 5px 0 5px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid black;
+}
+
+.portf-item-overlay{
+	/*cursor: pointer;*/
+	position: absolute;
+	background-color: rgba(50, 50, 50, .8);
+	left: 0;
+	top: 0;
+	height: inherit;
+	width: inherit;
+	border-radius: 20px;
+}
+
+.portf-item-overlay p{
+	height: 75%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+
+.portf-item-overlay-button {
+	height: 10%;
+	width: 20%;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0 5% 0 5%;
+}
+
+.button-disabled{
+  background-color: rgba(100, 100, 100, 8.0);
+  cursor: not-allowed;
+}
+/*.portf-item-overlay-pagebutton{
+	height: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*z-index: 5;
+}*/
