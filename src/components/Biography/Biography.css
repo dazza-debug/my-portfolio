@@ -3,10 +3,11 @@
 	font-size: xx-large;
 	font-weight: bolder;
 	position: relative;
+	background: white;
 }
 
 .bio-title{
-	background: -webkit-linear-gradient(145deg, rgba(0,190,140,1) 0%, rgba(71,255,253,1) 100%);
+	background: linear-gradient(145deg, rgba(0,190,140,1) 0%, rgba(71,255,253,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	display: flex;
@@ -25,18 +26,6 @@
 	position: relative;
 }
 
-.bio-content-left{
-	width: 49vw;
-	/*text-align: left;*/
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
-
-.bio-content-left p {
-	padding: 0 10px 0 25px;
-}
-
 .bio-content-right{
 	width: 49vw;
 	margin-bottom: 25px;
@@ -51,6 +40,19 @@
 	justify-items: center;
 	align-items: center;
 }
+
+.bio-content-left{
+	width: 49vw;
+	/*text-align: left;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.bio-content-left p {
+	padding: 0 10px 0 25px;
+}
+
 
 .bio-content-left-top p{
 	/*text-align: center;*/
@@ -85,3 +87,73 @@
 	transform: translateY(-15px);
 
 }
+
+/*Media Quiries*/
+@media only screen and (max-height: 1050px), (max-width: 2500px){
+	.bio-main{
+		font-size: large;
+	}/*
+	.milestone{
+		width: 800px;
+	}*/
+	.bio-content-right{
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	.bio-content-right-logos{
+		grid-template-columns: 150px 150px 150px 150px;
+		row-gap: 0;
+		/*column-gap: auto;*/
+		/*gap: 15px;*/
+	}
+	.bio-content-right-logos img{
+		width: 60px;
+	}
+}
+
+@media only screen and (max-height: 710px), (max-width: 1200px){
+	.bio-main{
+		height: 200vh;
+	}
+	.bio-title{
+		height: 10%;
+	}
+	.bio-about{
+		height: 90%;
+		flex-direction: column;
+	}
+	.bio-content-left p{
+		padding: 0 25px 0 25px;
+	}
+	.milestone{
+		margin: 12px 25px 12px 25px;
+	}
+	.bio-content-left, .bio-content-right{
+		width: 100%;
+		height: 50%;
+	}
+	/*.bio-content-right{
+		width: 100%;
+	}*/
+}
+
+@media only screen and (max-width: 615px){
+	.bio-main{
+		height: fit-content;
+		font-size: small;
+	}
+	.bio-title{
+		height: 3rem;
+	}
+	.bio-content-left{
+		height: 700px;
+	}
+	.bio-content-right-logos {
+		width: 100%;
+		grid-template-columns: 33% 33% 33%;
+		row-gap: 20px;
+	} 
+}
+
+/*height 408 is not great*/

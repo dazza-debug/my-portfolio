@@ -1,6 +1,6 @@
 
 .App-header {
-  height: 85vh;
+  height: 95vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -15,4 +15,22 @@
 
 .header-info{
 	padding: 200px;
+}
+
+/*media quiries*/
+
+@media only screen and (max-width: 1200px), (max-height: 300px){
+  .App-header{
+    justify-content: center;
+    font-size: x-large;
+  }
+  .header-info{
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 588px){
+  .App-header{
+    font-size: large;
+  }
 }
