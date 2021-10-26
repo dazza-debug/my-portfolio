@@ -1,5 +1,6 @@
 # My Portfolio
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Look at the page here: https://dazza-debug.github.io/my-portfolio/
 
 ### `Clone Repo`
 ### `npm install`
