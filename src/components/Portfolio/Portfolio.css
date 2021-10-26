@@ -1,24 +1,26 @@
 .portf-main{
-	height: 100vh;
+	height: fit-content;
 	background: rgb(90,219,185);
   	background: linear-gradient(45deg, rgba(90,219,185,1) 0%, rgba(123,237,236,1) 100%);
 /*  	background: rgb(80,196,166);
 	background: linear-gradient(45deg, rgba(80,196,166,1) 0%, rgba(111,213,212,1) 100%);*/
-  	font-size: xx-large;
+  font-size: xx-large;
 	font-weight: bolder;
 	position: relative;
 	color: white;
 }
 
 .portf-title{
-	height: 20%;
+	height: 4rem;
+	padding: 30px 0 15px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .portf-content{
-	height: 80%;
+	padding: 15px 0 30px 0;
+	height: fit-content;
 	display: grid;
 	gap: 20px;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 750px));
@@ -36,6 +38,7 @@
 	border-radius: 20px;
 	/*border: 2px solid black;*/
 	position: relative;
+	transition: transform 2s ease-in-out;
 }
 
 .portf-item-img{
@@ -47,30 +50,53 @@
 }
 
 .portf-item-overlay{
-	/*cursor: pointer;*/
 	position: absolute;
-	background-color: rgba(50, 50, 50, .8);
+	cursor: default;
+	background-color: transparent;
 	left: 0;
 	top: 0;
 	height: inherit;
 	width: inherit;
 	border-radius: 20px;
+	transition: background 2s ease-in-out;
 }
 
 .portf-item-overlay p{
+	color: white;
+	opacity: 0%;
 	height: 75%;
 	display: flex;
 	align-items: center;
 	padding: 10px;
+	transition: opacity 2s ease-in-out;
 }
 
 
 .portf-item-overlay-button {
+	opacity: 0%;
+	/*display: none;*/
 	height: 10%;
 	width: 20%;
 	border-radius: 5px;
 	cursor: pointer;
 	margin: 0 5% 0 5%;
+	transition: opacity 2s ease-in-out;
+}
+
+.portf-item:hover{
+	transform: translate(-5px, -5px);
+}
+
+.portf-item-overlay:hover{
+	background: rgba(50, 50, 50, .8);
+}
+
+.portf-item-overlay:hover.portf-item-overlay p{
+	opacity: 100%;
+}
+.portf-item-overlay:hover .portf-item-overlay-button{
+	/*display: initial;*/
+	opacity: 100%;
 }
 
 .button-disabled{
@@ -106,9 +132,16 @@
 	.portf-item-img{
 		width: 400px;
 	}
+	.portf-item-overlay-button{
+		height: 2rem;
+		width: 100px;
+	}
 }
 
 @media only screen and (max-width: 1000px), (max-height: 725px){
+	.portf-main{
+		font-size: small;
+	}
 	.portf-content{
 		grid-template-columns: repeat(auto-fill, 265px);
 	}
@@ -118,6 +151,9 @@
 	}
 	.portf-item-img{
 		width: 250px;
+	}
+	.portf-item-overlay p{
+		height: 70%;
 	}
 }
 

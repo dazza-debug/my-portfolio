@@ -5,20 +5,27 @@ import Biography from '../../components/Biography/Biography';
 import Portfolio from '../../components/Portfolio/Portfolio';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+import ToTop from '../../components/ToTop/ToTop';
 
 // this works if you want to use it
-// function fancyScroll () {
-//   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-//     document.getElementById("navigation").style.height = "80px"
-//   }
-//   else{
-//     document.getElementById("navigation").style.height = "150px"
-//   }
-// }
+function makeToTopVisible () {
+  if(!document.getElementById("totop"))
+  {
+    return;
+  }
+
+  console.log('working?');
+  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    document.getElementById("totop").classList.add('totop-main-visible');
+  }
+  else{
+    document.getElementById("totop").classList.remove('totop-main-visible');
+  }
+}
 
 const App = () => {
   return (
-    <div  className="App">
+    <div onWheel={makeToTopVisible} className="App">
       <Navigation />
       <Header />
       {/*Async Components*/}
@@ -26,6 +33,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <ToTop />
     </div>
   );
 }

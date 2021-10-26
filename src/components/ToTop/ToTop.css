@@ -1,0 +1,28 @@
+.totop-main{
+	position: fixed;
+	width: 75px;
+	height: 75px;
+	/*transform: rotate(720deg);*/
+/*	width: 1px;
+	height: 1px;*/
+	z-index: 10000;
+	left: 100%;
+	top: 100%;
+	transform: translate(100%, -100%);
+	padding: 10px;
+	cursor: pointer;
+	transition: transform 2s;
+}
+
+.totop-main-visible{
+	/*width: 75px;
+	height: 75px;*/
+	transform: translate(-100%, -100%);
+}
+
+@media only screen and (max-width: 1000px){
+	.totop-main{
+		width: 25px;
+		height: 25px;
+	}
+}

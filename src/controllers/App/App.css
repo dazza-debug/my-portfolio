@@ -11,6 +11,7 @@ body{
 
 html{
   scroll-behavior: smooth;
+  -webkit-scroll-behaviour: smooth;
 }
 
 /*scrollbar stuff*/
@@ -34,6 +35,7 @@ ul {
 }
 
 .App {
+  position: relative;
   text-align: center;
 }
 
