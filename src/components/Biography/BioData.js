@@ -50,24 +50,30 @@ const bioData = [
 	}
 ];
 
-// const milestone = [
-// 	{
-// 		"milestone": `Completed "Complete C# Unity Developer 2D" (Udemy)`
-// 	},
-// 	{
-// 		"milestone": `Completed "Certificate III in information, digital media and technology" course (TAFE)`
-// 	},
-// 	{
-// 		"milestone": `Completed "The Complete Web Developer Zero to Mastery" course (Udemy)`
-// 	},
-// 	{
-// 		"milestone": `Began project "H M Movie Motors" (95% complete)`
-// 	},
-// 	{
-// 		"milestone": `Completed "The Complete Junior to Senior Web Developer Roadmap" course (Udemy)`
-// 	},
-// ]
+const milestone = [
+	{
+		"milestone": `Completed "Complete C# Unity Developer 2D" (Udemy)`,
+		"complete": true
+	},
+	{
+		"milestone": `Completed "Certificate III in information, digital media and technology" course (TAFE)`,
+		"complete": true
+	},
+	{
+		"milestone": `Completed "The Complete Web Developer Zero to Mastery" course (Udemy)`,
+		"complete": true
+	},
+	{
+		"milestone": `Began project "H M Movie Motors" (95% complete)`,
+		"complete": false
+	},
+	{
+		"milestone": `Completed "The Complete Junior to Senior Web Developer Roadmap" course (Udemy)`,
+		"complete": true
+	},
+]
 
 module.exports = {
-	bioData
+	bioData,
+	milestone
 }
