@@ -91,10 +91,10 @@
 	background: rgba(50, 50, 50, .8);
 }
 
-.portf-item-overlay:hover p{
+/*.portf-item-overlay:hover p{
 	opacity: 100%;
-}
-.portf-item-overlay:hover .portf-item-overlay-button{
+}*/
+.portf-item-overlay:hover > * {
 	/*display: initial;*/
 	opacity: 100%;
 }

@@ -26,7 +26,7 @@ export default function Navigation (){
 				<li className="nav-item"><a href="#biography">Biography</a></li>
 				<li className="nav-item"><a href="#portfolio">Portfolio</a></li>
 				<li className="nav-item"><a href="#contact">Contact</a></li>
-				<li className="nav-item"><a href="#contact">Resumè</a></li>
+				<li className="nav-item"><a href={process.env.PUBLIC_URL + "/Darian Seovic Resume 2021 Web Dev.pdf"}>Resumè</a></li>
 			</ul>
 		</div>
 	);
