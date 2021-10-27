@@ -63,7 +63,7 @@
 
 .portf-item-overlay p{
 	color: white;
-	opacity: 0%;
+	opacity: 0.0;
 	height: 75%;
 	display: flex;
 	align-items: center;
@@ -73,8 +73,7 @@
 
 
 .portf-item-overlay-button {
-	opacity: 0%;
-	/*display: none;*/
+	opacity: 0.0;
 	height: 10%;
 	width: 20%;
 	border-radius: 5px;
@@ -87,29 +86,19 @@
 	transform: translate(-5px, -5px);
 }
 
-.portf-item-overlay:hover{
-	background: rgba(50, 50, 50, .8);
-}
-
-/*.portf-item-overlay:hover p{
-	opacity: 100%;
-}*/
-.portf-item-overlay:hover > * {
-	/*display: initial;*/
-	opacity: 100%;
-}
 
 .button-disabled{
   background-color: rgba(100, 100, 100, 8.0);
   cursor: not-allowed;
 }
-/*.portf-item-overlay-pagebutton{
-	height: 80%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	/*z-index: 5;
-}*/
+.portf-item-overlay:hover{
+	background: rgba(50, 50, 50, .8);
+}
+/*If you are wondering why i did this its because for some reason the webpack css plugin
+ is removing the zeros of 100% and so it becomes 1% which DOESNT DO ANYTHING!*/
+.portf-item-overlay:hover > * {
+	opacity: 0.99;
+}
 
 /*Media Queries*/
 @media only screen and (max-width: 2290px), (max-height: 1150px){
