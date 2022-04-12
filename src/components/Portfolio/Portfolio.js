@@ -18,7 +18,7 @@ export default function Portfolio() {
 					portfData&&portfData.length>=1?portfData.map((item, id) => {
 						return(
 							<div key={id} id={`item${id}`} className="portf-item">
-								<img className="portf-item-img" alt="name" src={item.imgUrl} />
+								<img className="portf-item-img" alt="name" src={item.imgUrl} width="600px" height="350px" />
 								<h3>{item.name}</h3>
 								<div className="portf-item-overlay">
 									<p>{item.moreInfo}</p>

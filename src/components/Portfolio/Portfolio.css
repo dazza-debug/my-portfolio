@@ -120,6 +120,8 @@
 		height: 290px;
 	}
 	.portf-item-img{
+		width: unset;
+		height: unset;
 		width: 400px;
 	}
 	.portf-item-overlay-button{
