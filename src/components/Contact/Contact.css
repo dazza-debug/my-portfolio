@@ -4,6 +4,7 @@
 	font-size: xx-large;
 	font-weight: bolder;
 	position: relative;
+	scroll-margin-top: 75px;
 }
 
 /*repeated code! make this not repeated*/

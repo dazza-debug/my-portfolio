@@ -17,17 +17,17 @@ const portfData = [
 	{
 		"name": "H M Movie Motors",
 		"imgUrl": process.env.PUBLIC_URL + '/Porfolio Images/HMMovieMotors.jpg',
-		"moreInfo": "H M Movie Motors is a react app built for a small business. It is currently not complete but is set to complete in the next few days.",
+		"moreInfo": "H M Movie Motors is a react app built for a small business. It focuses on showing clients the availabilty of vehicles.",
 		"pageUrl": "https://www.hmmoviemotors.com/",
 		"sourceCode": ""
 	},
-	// {
-	// 	"name": "tester",
-	// 	"imgUrl": process.env.PUBLIC_URL + '/Porfolio Images/HMMovieMotors.jpg',
-	// 	"moreInfo": "H M Movie Motors is a react app built for a small business. It is currently not complete but is set to complete in the next few days.",
-	// 	"pageUrl": "https://www.hmmoviemotors.com/",
-	// 	"sourceCode": ""
-	// },
+	{
+		"name": "Finnerty Automotive",
+		"imgUrl": process.env.PUBLIC_URL + '/Porfolio Images/FinnertyAutomtoive.jpg',
+		"moreInfo": "Finnerty Automotive is a react app built for a small business. It is mainly a landing page for customers but also houses a blog.",
+		"pageUrl": "https://finnertyautomotive.com/",
+		"sourceCode": "https://github.com/dazza-debug/Finnerty-Automotive"
+	},
 ]
 
 export default portfData;

@@ -4,6 +4,7 @@
 	font-weight: bolder;
 	position: relative;
 	background: white;
+	scroll-margin-top: 75px;
 }
 
 .bio-title{

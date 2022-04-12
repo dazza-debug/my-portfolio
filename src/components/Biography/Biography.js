@@ -13,11 +13,13 @@ export default function Biography() {
 						<h3>Biography</h3>
 						<p><i>
 							"I began my development career learning how to develop games in unity using C#.
-							After some time I decided to learn and become a web developer. So, I went ahead
+							After some time I decided to learn and become a Web Developer. So, I went ahead
 							and completed both The Complete Web Developer, and The Complete Junior to Senior Web Developer Roadmap
 							courses from the ZTM Academy. During this learning process I grew a passion for web development and started
 							on my own projects (see portfolio). I am confident and competent as a full-stack web developer and I am the
-							perfect fit for your company. I love to code and build big projects by using best practices in the industry."
+							perfect fit for your company. I love to code and build big projects by using the best practices in the industry.
+							I now have 1 full year of experience in the Web Development Industry, over this time I have completed mutltiple
+							projects and continued to reinforce my knowladge in Web Development."
 						</i></p>
 					</div>
 					<div className="bio-content-left-bottom">
@@ -53,7 +55,7 @@ export default function Biography() {
 					</div>
 				</div>
 				<div className="bio-content-right">
-					<h3>What I like to work with</h3>
+					<h3>What I have worked with</h3>
 					<div className="bio-content-right-logos">
 						{
 							bioData.length>1&&bioData?bioData.map((item, id) => {

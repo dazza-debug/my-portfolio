@@ -42,7 +42,7 @@ const bioData = [
 	},
 	{
 		"name": "C# logo",
-		"url": process.env.PUBLIC_URL + '/Logos/c-sharp-svgrepo-com.svg'
+		"url": process.env.PUBLIC_URL + '/Logos/nextjs-svgrepo-com.svg'
 	},
 	{
 		"name": "Git logo",
@@ -64,13 +64,17 @@ const milestone = [
 		"complete": true
 	},
 	{
-		"milestone": `Began project "H M Movie Motors" (95% complete)`,
+		"milestone": `Completed project "H M Movie Motors"`,
 		"complete": false
 	},
 	{
 		"milestone": `Completed "The Complete Junior to Senior Web Developer Roadmap" course (Udemy)`,
 		"complete": true
 	},
+	{
+		"milestone": `Completed project "Finnerty Automotive"`,
+		"complete": true
+	}
 ]
 
 module.exports = {
